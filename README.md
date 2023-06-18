@@ -1,11 +1,11 @@
-About r-psychometric
-====================
+About r-psychometric-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-psychometric-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=psychometric
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-psychometric-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides tools useful for measurement theory (Allen & Yen 2001)<ISBN: 157766230X>, meta-analysis (validity-generalization) (Schmidt & Hunter)<doi:10.4135/9781483398105>, reliability, item analysis, inter-rater reliability, classical utility, and correlation analysis  (Cohen et. al. 2003)<doi:10.4324/9780203774441>.
 
