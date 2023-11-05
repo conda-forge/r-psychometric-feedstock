@@ -1,4 +1,4 @@
-{% set version = '2.3' %}
+{% set version = "2.4" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/psychometric_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/psychometric/psychometric_{{ version }}.tar.gz
-  sha256: b493e58b6ebf304551175bd843facda23002bc593cf2e71fad6bb89a7e98c17a
+  sha256: 3af43437f3624069532862c697276b881a7158243aa83dbd9b675d80f87f8fd6
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -46,10 +46,7 @@ test:
 about:
   home: https://CRAN.R-project.org/package=psychometric
   license: GPL-2.0-or-later
-  summary: 'Provides tools useful for measurement theory (Allen & Yen 2001)<ISBN: 157766230X>,
-    meta-analysis (validity-generalization) (Schmidt & Hunter)<doi:10.4135/9781483398105>,
-    reliability, item analysis, inter-rater reliability, classical utility, and correlation
-    analysis  (Cohen et. al. 2003)<doi:10.4324/9780203774441>.'
+  summary: 'Provides tools useful for measurement theory (Allen & Yen 2001)<ISBN: 157766230X>, meta-analysis (validity-generalization) (Schmidt & Hunter)<doi:10.4135/9781483398105>, reliability, item analysis, inter-rater reliability, classical utility, and correlation analysis  (Cohen et. al. 2003)<doi:10.4324/9780203774441>.'
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
