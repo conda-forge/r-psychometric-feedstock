@@ -1,7 +1,6 @@
 {% set version = "2.4" %}
 
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-psychometric
@@ -14,8 +13,7 @@ source:
   sha256: 3af43437f3624069532862c697276b881a7158243aa83dbd9b675d80f87f8fd6
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
